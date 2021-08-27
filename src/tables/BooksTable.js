@@ -18,18 +18,18 @@ export const BooksTable = (props) => {
                             <td>{book.name}</td>
                             <td>{book.author}</td>
                             <td>
-                                <Button onClick={() => props.editBook(book)}>
+                                <Button variant="outline-secondary" onClick={() => props.editBook(book)}>
                                     Edit
                                 </Button>
                                 &nbsp;&nbsp;
-                                <Button onClick={() => props.deleteBook(book.id)}>
+                                <Button variant="outline-danger" onClick={() => props.deleteBook(book.id)}>
                                     Delete
                                 </Button>
                             </td>
                         </tr>
                     )
                 ) : (
-                    <tr> <td colSpan={2}>No users</td></tr>
+                    <tr> <td colSpan={3}>No users</td></tr>
                 )
             }
         </tbody >

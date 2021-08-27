@@ -38,12 +38,12 @@ const App = () => {
 
   return (
     <div className="container">
-      <div className="flex-row">
-        <div className="flex-large">
+      <div className="row">
+        <div className="col">
           <h2>Books</h2>
           <BooksTable books={books} editBook={editBook} deleteBook={deleteBook} />
         </div>
-        <div className="flex-large">
+        <div className="col">
           {editing ? (
             <Fragment>
               <h2>Editing - {currentBook.name}</h2>

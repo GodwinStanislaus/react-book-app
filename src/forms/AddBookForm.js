@@ -27,7 +27,7 @@ const AddBookForm = props => {
                 <Form.Label>Author</Form.Label>
                 <Form.Control type="text" name="author" value={book.author} placeholder="Enter Author Name" onChange={handleInputChange}></Form.Control>
             </Form.Group>
-            <Button type="submit">Add new book</Button>
+            <Button type="submit" variant="outline-primary">Add new book</Button>
         </Form>
     )
 }
